@@ -156,3 +156,71 @@ label{
     color: white;
 }
 
+
+
+ 
+/* GRID----------------------------------------------------------------------------- */
+
+.section{
+    padding-top: 50px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.section .div .imagen-uno{
+    grid-column: span 1;
+}
+
+.section .texto-uno{
+    grid-column: span 3;
+}
+
+.section .imagen-dos{
+    grid-column: span 1;
+}
+
+.section .texto-dos{
+    grid-column: span 3;
+}
+
+.section .imagen-tres{
+    grid-column: span 1;
+}
+
+.section .texto-tres{
+    grid-column: span 3;
+}
+
+.section .imagen-cuatro{
+    grid-column: span 1;
+}
+
+.section .texto-cuatro{
+    grid-column: span 3;
+}
+
+
+/* MEDIA QUERIS MOBILE (se aplico a página Servicios)------------------------------------ */
+
+@media screen and (max-width:600px){
+    .section{
+        padding-top: 110px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 0.4fr);
+        justify-content: center;
+        justify-items: center;
+    }
+    .texto{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
