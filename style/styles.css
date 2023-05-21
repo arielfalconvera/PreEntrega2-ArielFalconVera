@@ -160,8 +160,8 @@ label{
 
  
 /* GRID----------------------------------------------------------------------------- */
-
-.section{
+/* Servicios */
+.sectionServicios{
     padding-top: 50px;
     height: 100%;
     display: grid;
@@ -170,7 +170,7 @@ label{
 
 }
 
-.section .div .imagen-uno{
+.section .imagen-uno{
     grid-column: span 1;
 }
 
@@ -202,11 +202,43 @@ label{
     grid-column: span 3;
 }
 
+/* Index */
+.sectionIndex{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 1fr;
+}
+
+.h1{
+    color: white;
+    grid-column: span 3;
+}
+
+.h2{
+    color: white;
+    grid-column: span 3;
+}
+
+.iframe{
+    width: 500px;
+    height: 500px;
+    color: white;
+    grid-column: span 1;
+}
+
+.h3{
+    color: white;
+    grid-column: span 2;
+}
+
+
+
 
 /* MEDIA QUERIS MOBILE (se aplico a página Servicios)------------------------------------ */
 
 @media screen and (max-width:600px){
-    .section{
+    .sectionServicios{
         padding-top: 110px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 0.4fr);
@@ -217,10 +249,37 @@ label{
         justify-content: center;
     }
 
+    .sectionIndex{
+        padding-top: 110px;
+        grid-template-columns: 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+    }
+
+    .h1{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .h2{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .h3{
+        text-align: center;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .iframe{
+        width: 450px;
+        height: 450px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
-
-
-
+   
+    
 
 /* ------------------------------------------------------------------------------ */
