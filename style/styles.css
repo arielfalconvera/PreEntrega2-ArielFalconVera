@@ -1,0 +1,343 @@
+/* RESET---------------------------------------------------------------------------------------------------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* HEADER--------------------------------------------------------------------------------------------------------------------------- */
+
+.colorBoton{
+    background-color: rgb(0, 0, 0);
+}
+
+header nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    /*caja*/
+    width: 100%;
+    justify-content: space-between;
+}
+
+.right{
+    width: fit-content;
+}
+
+.left{
+    width: fit-content;
+}
+
+header nav div form button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* BODY----------------------------------------------------------------------------------------------------------------------------- */
+
+
+body{
+    background-image: url("../imagenes/fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* FOOTER--------------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    height: 20px;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    /* border-style: solid;
+    border-color: black; */
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* CLASES--------------------------------------------------------------------------------------------------------------------------- */
+
+.espacio{
+    /*espaciado del nav*/
+    padding-top: 50px;
+}
+
+.textoMedio{
+    margin-top: 130px;
+}
+
+.contenedor{
+    color: white;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.texto{
+    color: white;
+    margin: 5px;
+}
+
+.inline{
+    height: 30px;
+    display: flex;
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.block{
+    display: block;
+}
+
+.padding{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* TEXTO---------------------------------------------------------------------------------------------------------------------------- */
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* DIVS----------------------------------------------------------------------------------------------------------------------------- */
+
+div a{
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+label{
+    color: white;
+}
+
+
+
+ 
+/* GRID----------------------------------------------------------------------------- */
+/* Servicios */
+.sectionServicios{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+
+}
+
+.sectionServicios .imagen-uno{
+    padding-top: 50px;
+    grid-column: span 1;
+}
+
+.sectionServicios .texto-uno{
+    grid-column: span 3;
+}
+
+.sectionServicios .imagen-dos{
+    padding-top: 50px;
+    grid-column: span 1;
+}
+
+.sectionServicios .texto-dos{
+    grid-column: span 3;
+}
+
+.sectionServicios .imagen-tres{
+    padding-top: 50px;
+    grid-column: span 1;
+}
+
+.sectionServicios .texto-tres{
+    grid-column: span 3;
+}
+
+.sectionServicios .imagen-cuatro{
+    padding-top: 50px;
+    grid-column: span 1;
+}
+
+.sectionServicios .texto-cuatro{
+    grid-column: span 3;
+}
+
+/* Index */
+.sectionIndex{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+.sectionIndex .h1{
+    margin-top: 40px;
+    color: white;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.sectionIndex .h2{
+    color: white;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.sectionIndex .iframe{
+    color: white;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.sectionIndex .h3{
+    padding-left: 10px;
+    color: white;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+iframe{
+    height: 500px;
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIS MOBILE--------------------------------*/
+@media screen and (max-width:600px){
+    .sectionServicios{
+        padding-top: 110px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr  0.4fr 1fr  0.4fr 1fr  0.4fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 20px;
+    }
+    
+    .sectionServicios .imagen-uno{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .texto-uno{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .imagen-dos{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .texto-dos{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .imagen-tres{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .texto-tres{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .imagen-cuatro{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sectionServicios .texto-cuatro{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .texto{
+        justify-content: center;
+    }
+    
+    .sectionIndex{
+        padding-top: 110px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 1fr;
+    }
+
+    .sectionIndex .h1{
+        margin-top: 40px;
+        color: white;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .sectionIndex .h2{
+        color: white;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .sectionIndex .iframe{
+        color: white;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .sectionIndex .h3{
+        padding-left: 10px;
+        color: white;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    iframe{
+        height: 450px;
+        width: 450px;
+    }
+ }  
+ 
+    
+
+/* ------------------------------------------------------------------------------ */
