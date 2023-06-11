@@ -1,3 +1,4 @@
+//import de variables
 @import "../scss/extras/colores";
 
 *{
@@ -6,7 +7,7 @@
     box-sizing: border-box;
 }
 
-// Estilo del header con NESTING
+/* Estilo del header con NESTING */
 
 header{
     width: 100%;
@@ -17,7 +18,7 @@ header{
         transition: .5s;
     }
     nav{
-        background-image: linear-gradient(grey,whitesmoke);
+        background-image: linear-gradient($color-etiquetas);
     }
     .content{
         padding: .5%;
@@ -27,7 +28,8 @@ header{
         justify-content: start;
     }
 }
-//estilos del texto
+
+/* estilos del texto */
 
 h1, h2, h3, h4, p{
     color: $color-texto;
@@ -49,7 +51,7 @@ div a{
     text-decoration: none;
 }
 
-//estilos del fondo
+/* estilos del fondo */
 
 body{
     background-color: black;
@@ -59,7 +61,7 @@ body{
 
 
 
-//estilos footer con NESTING
+/* estilos footer con NESTING */
 
 footer{
     p{
@@ -71,22 +73,21 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background-color:rgb(185, 185, 185);
+    background-image: linear-gradient(to top, $color-etiquetas);
     color: rgb(0, 0, 0);
     justify-content: space-between;
 }
 
-//clases adherentes
+/* clases */
 .espacio{
-    /*espaciado del nav*/
-    padding-top: 60px;
+    padding-top: $espaciado;
 }
 
 
 /*GRID*/
 /*Servicios*/
 .sectionServicios{
-    padding-top: 60px;
+    padding-top: $espaciado;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -95,7 +96,7 @@ footer{
 }
 
 .sectionServicios .imagen-uno, .imagen-dos, .imagen-tres, .imagen-cuatro{
-    padding-top: 50px;
+    padding-top: $espaciado;
     grid-column: span 1;
 }
 
@@ -168,7 +169,7 @@ iframe{
 
 .sectionContacto .Contacto-texto{
     padding-left: 0px;
-    padding-top: 60px;
+    padding-top: $espaciado;
     width: 400px;
     grid-column: span 1;
     grid-row: span 3;
