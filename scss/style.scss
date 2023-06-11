@@ -1,12 +1,16 @@
+@import "../scss/extras/colores";
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-// Estilo del header
+// Estilo del header con NESTING
 
 header{
+    width: 100%;
+    position: fixed;
     .boton:hover{
         color: white;
         font-size: 1.1rem;
@@ -25,14 +29,11 @@ header{
 }
 //estilos del texto
 
-h1, h2, h3, h4{
-    color: rgb(204, 204, 204);
+h1, h2, h3, h4, p{
+    color: $color-texto;
     text-align: center;
 }
 
-p{
-    color: rgb(204, 204, 204);
-}
 
 .margin{
     margin: 3% 0% 3% 5%;
@@ -58,14 +59,14 @@ body{
 
 
 
-//estilos footer
+//estilos footer con NESTING
 
 footer{
     p{
         color: black;
         font-size: 1rem;
     }
-    height: 20px;
+    height: 4%;
     display: flex;
     position: fixed;
     bottom: 0px;
@@ -78,14 +79,14 @@ footer{
 //clases adherentes
 .espacio{
     /*espaciado del nav*/
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 
 /*GRID*/
 /*Servicios*/
 .sectionServicios{
-    padding-top: 50px;
+    padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -99,6 +100,7 @@ footer{
 }
 
 .sectionServicios .texto-uno, .texto-dos, .texto-tres, .texto-cuatro{
+    padding: 2%;
     grid-column: span 3;
 }
 
@@ -106,7 +108,7 @@ footer{
 
 /* Index */
 .sectionIndex{
-    padding-top: 50px;
+    padding-top: 100px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 5% 25% 25% 25%;
