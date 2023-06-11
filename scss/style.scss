@@ -180,6 +180,53 @@ iframe{
     height: 100px;
 }
 
+
+/*GALERIA*/
+
+.contenedor .img-dos, .img-cinco{
+    display: none;
+}
+
+
+.contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    padding: 5px;
+}
+
+
+.contenedor{
+    padding: 2rem;
+    height: 100vh;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 33%);
+}
+
+
+.contenedor .img-dos, .img-cinco{
+    display: block;
+}
+
+.contenedor .img-dos, .img-cuatro{
+    grid-column: span 1;
+}
+
+.contenedor .img-uno, .img-tres{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.contenedor .img-cinco{
+    grid-column: span 2;
+}
+
+.contenedor .img.seis{
+    grid-column: span 3;
+}
+
 /* MEDIA QUERIS MOBILE--------------------------------*/
 @media screen and (max-width:600px){
     .sectionServicios{
@@ -235,11 +282,7 @@ iframe{
         height: 450px;
         width: 450px;
     }
- }  
+}  
 
 
 
-
- /*GALERIA*/
-
- 
